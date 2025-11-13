@@ -1,0 +1,98 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #fef9f3 0%, #e8f4f8 100%);
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Main Navigation */
+nav {
+    position: fixed;
+    top: 45%;
+    transform: translateY(-40%);
+    z-index: 900;
+    margin-left: 150px
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin: 5px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    letter-spacing: 5px;
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: lowercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ff6b9d;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+    .content {
+        margin-left: 300px;
+    }
+}
+
+@media (max-width: 1200px) {
+    nav {
+        left: 50px;
+    }
+    .content {
+        margin-left: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        padding: 20px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .logo {
+        position: relative;
+        top: 20px;
+        right: 20px;
+        text-align: center;
+    }
+
+    .content {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .hero-image {
+        position: relative;
+        right: auto;
+        max-width: 100%;
+    }
+}

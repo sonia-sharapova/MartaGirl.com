@@ -1,0 +1,186 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #fef9f3 0%, #e8f4f8 100%);
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Logo/Brand */
+.logo {
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    width: 30%;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 180px;
+    font-weight: 700;
+    color: #ffc0d4;
+    line-height: 0.85;
+    text-transform: lowercase;
+    letter-spacing: -2px;
+}
+
+/* Main Navigation */
+nav {
+    position: fixed;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+    z-index: 900;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin: 20px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: lowercase;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ff6b9d;
+}
+
+/* Back Button */
+.back-button {
+    position: fixed;
+    top: 80px;
+    left: 100px;
+    z-index: 900;
+}
+
+.back-button #category{
+    margin-left: 165px;
+    color: #333333;
+}
+
+.back-button, a {
+    text-decoration: none;
+    color: #ff1a75;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+/* Main Content */
+.content {
+    margin-left: 400px;
+    margin-right: 200px;
+    padding: 100px 50px;
+    max-width: 1200px;
+}
+
+
+/* Homepage Specific */
+.hero-image {
+    position: fixed;
+    top: 0;
+    max-width: 100%;
+    height: auto;
+    z-index: 100;
+    pointer-events: none;
+}
+
+/* Decorative Elements
+.decorative-shape {
+    position: fixed;
+    z-index: 50;
+    pointer-events: none;
+}
+
+.shape-circle {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+.shape-1 {
+    bottom: 100px;
+    right: 200px;
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.6) 0%, rgba(255, 0, 0, 0) 70%);
+    filter: blur(40px);
+}
+
+.shape-2 {
+    top: 200px;
+    right: -100px;
+    background: radial-gradient(circle, rgba(255, 192, 212, 0.4) 0%, rgba(255, 192, 212, 0) 70%);
+    filter: blur(60px);
+}
+*/
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+    .content {
+        margin-left: 300px;
+    }
+}
+
+@media (max-width: 1200px) {
+    nav {
+        left: 50px;
+    }
+    
+    .back-button {
+        left: 50px;
+    }
+    
+    .content {
+        margin-left: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        padding: 20px;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .logo {
+        position: relative;
+        top: 20px;
+        right: 20px;
+        text-align: center;
+    }
+    
+    .hero-image {
+        position: relative;
+        right: auto;
+        max-width: 100%;
+        margin-top: 40px;
+    }
+
+}

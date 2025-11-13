@@ -1,0 +1,62 @@
+
+/* About Page */
+.about-content {
+    max-width: 600px;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+}
+
+.about-photo {
+    position: fixed;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.social-links {
+    margin-top: 40px;
+}
+
+.social-links a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.social-links a:hover {
+    color: #ff6b9d;
+}
+
+/* Contact Page */
+.contact-content {
+    max-width: 600px;
+}
+
+.contact-content h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 2;
+}
+
+.contact-info a {
+    color: #ff6b9d;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
