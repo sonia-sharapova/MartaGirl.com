@@ -1,11 +1,10 @@
-
-
 /* Logo/Brand */
 .mini-logo {
     position: fixed;
     top: 30px;
     right: 40px;
     max-width: 18%;
+    z-index: 1000;
 }
 
 .mini-logo h1 {
@@ -92,6 +91,8 @@
 .content.with-secondary {
     margin-top: 120px;
     margin-left: 650px;
+    position: relative;
+    z-index: 500;
 }
 
 .content.with-tertiary {
@@ -113,6 +114,7 @@
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .portfolio-item:hover {
@@ -145,21 +147,22 @@
 
 /* Project Detail Page */
 .project-detail {
-    max-width: 800px;
+    max-width: 1000px;
+    letter-spacing: 3px;
 }
 
 .project-detail h1 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: lighter;
     margin-bottom: 20px;
-    color: #333;
+    color: #4f4f4f;
 }
 
 .project-detail .description {
     font-weight: lighter;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.8;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     color: #555;
 }
 
@@ -177,7 +180,142 @@
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
+/* Lightbox Styles */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+}
 
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lightbox-image-container {
+    position: relative;
+    max-width: 100%;
+    max-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox img {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 10px 50px rgba(0,0,0,0.5);
+}
+
+.lightbox-info {
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    max-width: 600px;
+}
+
+.lightbox-info h3 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.lightbox-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+    letter-spacing: 1px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    font-weight: 300;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    z-index: 10001;
+}
+
+.lightbox-close:hover {
+    transform: scale(1.1);
+}
+
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    width: calc(100% + 120px);
+    left: -60px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.lightbox-nav button {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    font-size: 30px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 5px;
+    pointer-events: all;
+    backdrop-filter: blur(10px);
+}
+
+.lightbox-nav button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.lightbox-nav button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.lightbox-counter {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 14px;
+    letter-spacing: 2px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 8px 16px;
+    border-radius: 20px;
+}
 
 /* Responsive Design */
 @media (max-width: 1400px) {
@@ -211,5 +349,24 @@
         top: auto;
         transform: none;
         padding: 20px;
+    }
+
+    .lightbox-nav {
+        width: 100%;
+        left: 0;
+        padding: 0 10px;
+    }
+
+    .lightbox-nav button {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+
+    .lightbox-info h3 {
+        font-size: 18px;
+    }
+
+    .lightbox-info p {
+        font-size: 14px;
     }
 }
