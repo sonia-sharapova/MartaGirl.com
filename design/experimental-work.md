@@ -19,8 +19,6 @@ Here are a few of my more lofty explorations, including my attempt at creating a
 ![Project 4](../images/design/experimental/4.png)
 *Connections*
 
-![Project 5](../images/design/experimental/5.png)
-
 ![Project 6](../images/design/experimental/6.jpg)
 
 ![Project 7](../images/design/experimental/7.jpg)
