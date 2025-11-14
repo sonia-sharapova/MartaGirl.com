@@ -1,10 +1,6 @@
 # Party Flyers
 
-Description
-
-## Approach
-
-Description
+Making flyers is something I love to do because not only does it create an identity for an event, but It harkens back to a time when sharing a piece of design work was necessary to get the word out. I think it brings a sense of dignity and identity to even the smallest get together.
 
 ## Gallery
 
