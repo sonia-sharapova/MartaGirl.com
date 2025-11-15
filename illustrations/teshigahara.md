@@ -1,43 +1,49 @@
 # Teshigahara
 
-Hiroshi Teshigahara's film "Woman in the Dunes" captures the feeling of suffocation, perversion and desperation in a way that no other film does. The fact that this film is in black and white inspired me to create a monotone mosaic, a study of the way sand and emotion are used to create a sinking feeling.
+Hiroshi Teshigahara’s film “Woman in the Dunes” captures the feeling of suffocation, perversion and desperation in a way that no other film does. The fact that this film is in black and white inspired me to create a monotone mosaic, a study of the way sand and emotion are used to create a sinking feeling. The aim of this work was to derive the raw visual language of the film through thoughtful illustration and an intuitive expression the ineffable qualities of Teshigahara’s work.
 
-The aim of this work was to derive the raw visual language of the film through thoughtful illustration and an intuitive expression of the ineffable qualities of Teshigahara's work.
+## Gallery
 
-## Illustrations
+<div class="portfolio-grid">
 
-![Mosaic 1](../../images/illustration/teshigahara/piece1.jpg)
-*Sand patterns and human forms*
+![Project 1](../images/illustration/teshigahara/2.jpeg)
+*Description*
+*Date*
 
-![Mosaic 2](../../images/illustration/teshigahara/piece2.jpg)
-*The woman in the dunes - detail study*
+![Project 2](../images/illustration/teshigahara/3.jpeg)
+*Description*
+*Date*
 
-![Mosaic 3](../../images/illustration/teshigahara/piece3.jpg)
-*Suffocation and texture*
+![Project 3](../images/illustration/teshigahara/4.jpeg)
+*Description*
+*Date*
 
-![Mosaic 4](../../images/illustration/teshigahara/piece4.jpg)
-*Geometric patterns of entrapment*
+![Project 4](../images/illustration/teshigahara/5.jpeg)
+*Description*
+*Date*
 
-![Mosaic 5](../../images/illustration/teshigahara/piece5.jpg)
-*Full composition - monotone mosaic*
+![Project 5](../images/illustration/teshigahara/7.jpeg)
+*Description*
+*Date*
 
-![Detail](../../images/illustration/teshigahara/detail.jpg)
-*Close-up showing technique*
+![Project 6](../images/illustration/teshigahara/9.jpeg)
+*Description*
+*Date*
 
-## Process
+![Project 7](../images/illustration/teshigahara/10.jpeg)
+*Description*
+*Date*
 
-Working exclusively in black and white to honor the film's cinematography, I created a series of illustrations that explore the visual motifs of sand, confinement, and the body. Each piece uses stippling and cross-hatching techniques to build texture and density, mimicking the overwhelming presence of sand in the film.
+![Project 8](../images/illustration/teshigahara/11.jpeg)
+*Description*
+*Date*
 
-The mosaic format allows individual moments to exist independently while creating a larger, more oppressive whole—much like the protagonist's experience of endless, repetitive days in the sand pit.
+![Project 9](../images/illustration/teshigahara/12.jpeg)
+*Description*
+*Date*
 
-## Details
+![Project 10](../images/illustration/teshigahara/13.jpeg)
+*Description*
+*Date*
 
-- **Medium:** Ink on paper
-- **Format:** Series of 12 illustrations, 8" × 10" each
-- **Technique:** Stippling, cross-hatching, monotone mosaic
-- **Inspiration:** "Woman in the Dunes" (1964) directed by Hiroshi Teshigahara
-- **Year:** 2022
-
-## Artist Statement
-
-Teshigahara's film haunted me with its visceral depiction of existential dread. These illustrations are my attempt to process that feeling—to break down the film's visual language into marks, textures, and patterns that capture something ineffable about the experience of watching it.
+</div>
