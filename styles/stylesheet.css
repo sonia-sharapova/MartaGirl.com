@@ -91,6 +91,8 @@ nav ul li a.active {
     margin-right: 200px;
     padding: 100px 50px;
     max-width: 1200px;
+    position: relative;
+    z-index: 100;
 }
 
 
