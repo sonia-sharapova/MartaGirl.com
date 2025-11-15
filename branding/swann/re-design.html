@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SWANN - Website Re-Design</title>
+    <title>Swann - Website Re-Design</title>
     <link rel="icon" href="../../images/titleMiniLogo.png" />
     <link rel="stylesheet" href="../../styles/pageStyle.css">
     <link rel="stylesheet" href="../../styles/stylesheet.css">
     <script src="../../scripts/markdown-loader.js"></script>
 </head>
-
+<style>
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    }
+</style>
 <body>
 <!-- Logo -->
 <div class="logo">
@@ -60,7 +64,7 @@
 <!-- Main Content - This will be populated from the markdown file -->
 <div class="content with-tertiary" data-markdown="re-design.md">
     <div class="project-detail">
-        <!-- Content will be loaded here from braille-code.md -->
+        <!-- Content will be loaded here from re-design.md -->
         <p style="color: #999;">Loading content...</p>
     </div>
 </div>
