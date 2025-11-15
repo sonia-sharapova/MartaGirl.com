@@ -55,8 +55,8 @@
 /* Tertiary Navigation (for sub-subcategories) */
 .tertiary-nav {
     position: fixed;
-    top: 50%;
-    left: 600px;
+    top: 44%;
+    left: 700px;
     transform: translateY(-50%);
     z-index: 700;
     display: none;
@@ -76,6 +76,7 @@
 
 .tertiary-nav ul li a {
     text-decoration: none;
+    text-transform: lowercase;
     color: #555;
     font-size: 14px;
     font-weight: 400;
@@ -96,7 +97,8 @@
 }
 
 .content.with-tertiary {
-    margin-left: 850px;
+    margin-top: 120px;
+    margin-left: 900px;
 }
 
 
