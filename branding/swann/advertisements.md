@@ -1,7 +1,6 @@
-# Advertisements
+# advertisements
 
-Swann Galleries
-
+Advertisement posters promoting auction showcases
 ## Gallery
 
 <div class="portfolio-grid">

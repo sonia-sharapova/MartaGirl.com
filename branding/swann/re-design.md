@@ -1,6 +1,6 @@
-# Website Re-Design
+# website re-design
 
-Swann Galleries
+For Swann Galleries website:
 
 ## Gallery
 
@@ -10,6 +10,6 @@ Swann Galleries
 ![Advertisement 2](../../images/branding/swann/re-design/2.png)
 ![Advertisement 3](../../images/branding/swann/re-design/3.png)
 ![Advertisement 3](../../images/branding/swann/re-design/og_site.png)
-*Details*
+*Swann Galleries*
 
 </div>

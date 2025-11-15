@@ -1,6 +1,6 @@
-# Events
+# events
 
-Swann Galleries
+Events hosted at Swann Galleries
 
 ## Gallery
 
