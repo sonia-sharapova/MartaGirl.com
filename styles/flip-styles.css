@@ -1,0 +1,165 @@
+/* Flip Container Styles */
+.flip-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.flip-container.flip-transition {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+/* Flip Images Container */
+.flip-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    min-height: 300px;
+}
+
+/* Single Image Display */
+.flip-container.single .flip-images {
+    justify-content: center;
+}
+
+.flip-container.single .flip-image {
+    max-width: 70%;
+    max-height: 40vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Pair Display */
+.flip-container.pair .flip-images {
+    justify-content: center;
+    gap: 30px;
+}
+
+.flip-container.pair .flip-image {
+    max-width: 45%;
+    max-height: 70vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Flip Info */
+.flip-info {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.flip-info h3 {
+    font-size: 24px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+.flip-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+/* Flip Navigation */
+.flip-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.flip-navigation button {
+    background: white;
+    border: 2px solid #ff6b9d;
+    color: #ff6b9d;
+    font-size: 16px;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+}
+
+.flip-navigation button:hover:not(:disabled) {
+    background: #ff6b9d;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 107, 157, 0.3);
+}
+
+.flip-navigation button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    border-color: #ccc;
+    color: #ccc;
+}
+
+.flip-counter {
+    font-size: 16px;
+    color: #666;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .flip-container.single .flip-image {
+        max-width: 85%;
+    }
+
+    .flip-container.pair .flip-image {
+        max-width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .flip-container {
+        padding: 20px;
+    }
+
+    .flip-images {
+        flex-direction: column;
+        gap: 20px;
+        min-height: auto;
+    }
+
+    .flip-container.single .flip-image,
+    .flip-container.pair .flip-image {
+        max-width: 100%;
+        max-height: 50vh;
+    }
+
+    .flip-navigation {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .flip-navigation button {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .flip-info h3 {
+        font-size: 20px;
+    }
+
+    .flip-info p {
+        font-size: 14px;
+    }
+}
