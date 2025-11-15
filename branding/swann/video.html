@@ -9,8 +9,38 @@
     <link rel="stylesheet" href="../../styles/stylesheet.css">
     <script src="../../scripts/markdown-loader.js"></script>
 </head>
+<style>
+    /* Override portfolio grid to have equal heights per row */
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 40px;
+    }
 
-<body>
+    .portfolio-item img {
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .project-detail .description a{
+        font-size: 12px;
+    }
+
+        /* Responsive adjustments */
+    @media (max-width: 1200px) {
+        .portfolio-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .portfolio-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+    <body>
 <!-- Logo -->
 <div class="logo">
     <img src="../../images/titleLogo.png" alt="Logo" class="mini-logo">
