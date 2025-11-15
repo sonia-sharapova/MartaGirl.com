@@ -1,0 +1,21 @@
+# Website Re-Design
+
+Swann Galleries
+
+## Gallery
+
+<div class="portfolio-grid">
+
+![Advertisement 1](../../images/branding/swann/re-design/1.png)
+*Details*
+
+![Advertisement 2](../../images/branding/swann/re-design/2.png)
+*Details*
+
+![Advertisement 3](../../images/branding/swann/re-design/3.png)
+*Details*
+
+![Advertisement 3](../../images/branding/swann/re-design/og_site.png)
+*Details*
+
+</div>
