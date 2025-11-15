@@ -6,52 +6,53 @@ In my time at Artforum Magazine I have worn many hats. As Production Associate, 
 
 <div class="portfolio-grid">
 
-![Project 1](../images/branding/artforum/1.png)
-*Description*
-
-![Project 2](../images/branding/artforum/2.png)
-*Description*
-
-![Project 3](../images/branding/artforum/3.jpg)
-*Description*
+![Project 5](../images/branding/artforum/5_1.gif)
+*Artforum Banner*
 
 ![Project 4](../images/branding/artforum/4.gif)
-*Description*
-
-![Project 5](../images/branding/artforum/5_1.gif)
-*Description*
+*Promotional Banner*
 
 ![Project 6](../images/branding/artforum/5_2.gif)
-*Description*
-
-![Project 7](../images/branding/artforum/6.gif)
-*Description*
+*Artforum Banner*
 
 ![Project 8](../images/branding/artforum/7.png)
-*Description*
-
-![Project 9](../images/branding/artforum/8.png)
-*Description*
+*Magazine Spread*
 
 ![Project 10](../images/branding/artforum/9.png)
-*Description*
-
-![Project 11](../images/branding/artforum/10.gif)
-*Description*
+*Magazine Spread*
 
 ![Project 12](../images/branding/artforum/10.png)
-*Description*
+*Magazine Spread*
 
-![Project 13](../images/branding/artforum/12.gif)
-*Description*
+![Project 8](../images/branding/artforum/8.png)
+*Magazine Spread*
+
+![Project 1](../images/branding/artforum/1.png)
+*Magazine Stack*
+
+![Project 2](../images/branding/artforum/2.png)
+![Project 3](../images/branding/artforum/3.jpg)
+*Showcase Decal*
+
+
+![Project 7](../images/branding/artforum/6.gif)
+*Bookforum Banner*
 
 ![Project 14](../images/branding/artforum/13.gif)
-*Description*
+*Bookforum Banner*
+
+
+
+![Project 13](../images/branding/artforum/12.gif)
+*Promotional Banner*
 
 ![Project 15](../images/branding/artforum/14.png)
-*Description*
+*Event Invitation*
 
 ![Project 16](../images/branding/artforum/15.png)
-*Description*
+*Event Invitation*
+
+![Project 11](../images/branding/artforum/10.gif)
+*Banner*
 
 </div>
