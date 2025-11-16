@@ -7,8 +7,18 @@
     <link rel="icon" href="../images/titleMiniLogo.png" />
     <link rel="stylesheet" href="../styles/pageStyle.css">
     <link rel="stylesheet" href="../styles/stylesheet.css">
+    <link rel="stylesheet" href="../styles/flip-styles.css">
     <script src="../scripts/markdown-loader.js"></script>
+    <script src="../scripts/flip-loader.js"></script>
+    <script src="../scripts/table-layout.js"></script>
 </head>
+<style>
+    /* Flip Navigation */
+    .flip-navigation {
+        gap: 40px;
+        top: 10px;
+    }
+</style>
 <body>
 
 <!-- Logo -->
@@ -48,11 +58,21 @@
     </ul>
 </div>
 
-<!-- Main Content - This will be populated from the markdown file -->
-<div class="content with-secondary" data-markdown="table-settings.md">
-    <div class="project-detail">
-        <!-- Content will be loaded here from table-settings.md -->
-        <p style="color: #999;">Loading content...</p>
+<!-- In table-settings.html -->
+<div class="layout-toggle">
+    <button id="tableGridView" class="active">Grid View</button>
+    <button id="tableFlipView">Flipbook View</button>
+</div>
+
+<!-- Main Content -->
+<div class="content with-secondary">
+    <div id="tableGridContent" class="project-detail-container">
+        <!-- Grid content will be loaded here -->
+        <p style="color: #999;">Loading grid content...</p>
+    </div>
+    <div id="tableFlipContent" class="project-detail-container" style="display: none;">
+        <!-- Flip content will be loaded here -->
+        <p style="color: #999;">Loading flipbook content...</p>
     </div>
 </div>
 

@@ -6,44 +6,24 @@ Hiroshi Teshigahara’s film “Woman in the Dunes” captures the feeling of su
 
 <div class="portfolio-grid">
 
-![Project 1](../images/illustration/teshigahara/2.jpeg)
-*Description*
-*Date*
+![Project 5](../images/illustration/teshigahara/7.jpeg)
 
-![Project 2](../images/illustration/teshigahara/3.jpeg)
-*Description*
-*Date*
+![Project 1](../images/illustration/teshigahara/2.jpeg)
 
 ![Project 3](../images/illustration/teshigahara/4.jpeg)
-*Description*
-*Date*
-
-![Project 4](../images/illustration/teshigahara/5.jpeg)
-*Description*
-*Date*
-
-![Project 5](../images/illustration/teshigahara/7.jpeg)
-*Description*
-*Date*
-
-![Project 6](../images/illustration/teshigahara/9.jpeg)
-*Description*
-*Date*
-
-![Project 7](../images/illustration/teshigahara/10.jpeg)
-*Description*
-*Date*
-
-![Project 8](../images/illustration/teshigahara/11.jpeg)
-*Description*
-*Date*
-
-![Project 9](../images/illustration/teshigahara/12.jpeg)
-*Description*
-*Date*
 
 ![Project 10](../images/illustration/teshigahara/13.jpeg)
-*Description*
-*Date*
+
+![Project 7](../images/illustration/teshigahara/10.jpeg)
+
+![Project 4](../images/illustration/teshigahara/5.jpeg)
+
+![Project 8](../images/illustration/teshigahara/11.jpeg)
+
+![Project 6](../images/illustration/teshigahara/9.jpeg)
+
+![Project 2](../images/illustration/teshigahara/3.jpeg)
+
+![Project 9](../images/illustration/teshigahara/12.jpeg)
 
 </div>
