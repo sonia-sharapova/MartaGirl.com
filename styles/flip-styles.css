@@ -39,14 +39,13 @@
 /* Pair Display */
 .flip-container.pair .flip-images {
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
 }
 
 .flip-container.pair .flip-image {
     max-width: 45%;
-    max-height: 70vh;
+    height: 40vh;
     width: auto;
-    height: auto;
     object-fit: contain;
     border-radius: 8px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
