@@ -7,32 +7,16 @@ In a partnership with Nike, I was tasked with creating a brand identity that wou
 
 <div class="portfolio-grid">
 
-![Project 1](../images/branding/braille-code/05.png)
-*Description*
-*Date*
+![Project 3](../images/branding/braille-code/25.png)
 
 ![Project 2](../images/branding/braille-code/16.png)
-*Description*
-*Date*
-
-![Project 3](../images/branding/braille-code/25.png)
-*Description*
-*Date*
-
 ![Project 4](../images/branding/braille-code/38.png)
-*Description*
-*Date*
 
 ![Project 5](../images/branding/braille-code/48.png)
-*Description*
-*Date*
+![Project 7](../images/branding/braille-code/56.png)
 
 ![Project 6](../images/branding/braille-code/52.png)
-*Description*
-*Date*
+![Project 1](../images/branding/braille-code/05.png)
 
-![Project 7](../images/branding/braille-code/56.png)
-*Description*
-*Date*
 
 </div>

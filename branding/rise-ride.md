@@ -6,60 +6,41 @@ In an exciting opportunity provided by Pratt Institute, I was placed on a small 
 
 <div class="portfolio-grid">
 
-![Project 1](../images/branding/rise-ride/00.png)
-*Description*
-*Date*
 
-![Project 2](../images/branding/rise-ride/1.png)
-*Description*
-*Date*
-
-![Project 3](../images/branding/rise-ride/2.png)
-*Description*
-*Date*
-
-![Project 4](../images/branding/rise-ride/23.png)
-*Description*
-*Date*
-
-![Project 5](../images/branding/rise-ride/28.png)
-*Description*
-*Date*
-
-![Project 6](../images/branding/rise-ride/36.png)
-*Description*
-*Date*
-
-![Project 7](../images/branding/rise-ride/44.png)
-*Description*
-*Date*
-
-![Project 8](../images/branding/rise-ride/51.png)
-*Description*
-*Date*
-
-![Project 9](../images/branding/rise-ride/52 2.png)
-*Description*
-*Date*
-
-![Project 10](../images/branding/rise-ride/52.png)
-*Description*
-*Date*
 
 ![Project 11](../images/branding/rise-ride/53.png)
-*Description*
-*Date*
 
 ![Project 12](../images/branding/rise-ride/55.png)
-*Description*
-*Date*
 
-![Project 13](../images/branding/rise-ride/56.png)
-*Description*
-*Date*
+![Project 8](../images/branding/rise-ride/51.png)
+
+![Project 2](../images/branding/rise-ride/1.png)
+
+![Project 4](../images/branding/rise-ride/23.png)
+
+![Project 10](../images/branding/rise-ride/52.png)
+
+![Project 5](../images/branding/rise-ride/28.png)
+![Project 6](../images/branding/rise-ride/36.png)
+![Project 7](../images/branding/rise-ride/44.png)
+![Project 9](../images/branding/rise-ride/52_2.png)
+![Project 1](../images/branding/rise-ride/00.png)
+*Infographics*
+
+![Project 6](../images/branding/rise-ride/36.png)
+
+![Project 7](../images/branding/rise-ride/44.png)
+
+![Project 9](../images/branding/rise-ride/52_2.png)
+
+![Project 1](../images/branding/rise-ride/00.png)
+
+
+![Project 3](../images/branding/rise-ride/2.png)
+
 
 ![Project 14](../images/branding/rise-ride/waterbottlemockup2.png)
-*Description*
-*Date*
+
+![Project 13](../images/branding/rise-ride/56.png)
 
 </div>

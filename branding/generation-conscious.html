@@ -7,8 +7,15 @@
     <link rel="icon" href="../images/titleMiniLogo.png" />
     <link rel="stylesheet" href="../styles/pageStyle.css">
     <link rel="stylesheet" href="../styles/stylesheet.css">
+    <link rel="stylesheet" href="../styles/flip-styles.css">
     <script src="../scripts/markdown-loader.js"></script>
+    <script src="../scripts/flip-loader.js"></script>
+    <script src="../scripts/layout.js"></script>
+
 </head>
+<style>
+
+</style>
 <body>
 <!-- Logo -->
 <div class="logo">
@@ -39,7 +46,7 @@
         <li><a href="swann/swann-galleries.html">swann auction galleries</a></li>
         <li><a href="artforum.html">artforum magazine</a></li>
         <li><a href="generation-conscious.html" class="active">generation conscious</a></li>
-        <li><a href="anonlychild.html">AnOnlyChild</a></li>
+        <li><a href="anonlychild.html" style="text-transform: unset">anOnlyChild</a></li>
         <li><a href="hetopia-vision.html">hetopia vision</a></li>
         <li><a href="rise-ride.html">rise & ride</a></li>
         <li><a href="ps6.html">PS6</a></li>
@@ -47,13 +54,27 @@
     </ul>
 </div>
 
-<!-- Main Content - This will be populated from the markdown file -->
-<div class="content with-secondary" data-markdown="generation-conscious.md">
-    <div class="project-detail">
-        <!-- Content will be loaded here from generation-conscious.md -->
-        <p style="color: #999;">Loading content...</p>
+
+<!-- Add this after the secondary navigation in generation-conscious.html -->
+<div class="layout-toggle">
+    <button id="gridView" class="active">Grid View</button>
+    <button id="flipView">Flipbook View</button>
+</div>
+
+<!-- Update your content containers -->
+<div class="content with-secondary">
+    <div id="gridContent">
+        <div class="project-detail" data-markdown="generation-conscious.md">
+            <p style="color: #999;">Loading grid content...</p>
+        </div>
+    </div>
+    <div id="flipContent" style="display: none;">
+        <div class="project-detail" data-flip-markdown="generation-flip.md">
+            <p style="color: #999;">Loading flipbook content...</p>
+        </div>
     </div>
 </div>
+
 
 <!-- Decorative Shapes -->
 <img src="../images/background/bck_general.jpg" alt="Hero" class="hero-image">
