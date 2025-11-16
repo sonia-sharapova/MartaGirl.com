@@ -430,13 +430,19 @@ class MarkdownLoader {
     }
 }
 
-// Auto-load markdown if data-markdown attribute is present
+
+// In both markdown-loader.js and flip-loader.js, modify the auto-loader:
 document.addEventListener('DOMContentLoaded', () => {
-    const contentElement = document.querySelector('[data-markdown]');
-    if (contentElement) {
-        const markdownPath = contentElement.getAttribute('data-markdown');
-        console.log('Loading markdown from:', markdownPath);
-        const loader = new MarkdownLoader(markdownPath);
-        loader.load();
+    // Only auto-load if no manual layout is present
+    const hasManualLayout = document.querySelector('.layout-toggle');
+
+    if (!hasManualLayout) {
+        const contentElement = document.querySelector('[data-markdown]');
+        if (contentElement) {
+            const markdownPath = contentElement.getAttribute('data-markdown');
+            console.log('Auto-loading markdown from:', markdownPath);
+            const loader = new MarkdownLoader(markdownPath);
+            loader.load();
+        }
     }
 });
