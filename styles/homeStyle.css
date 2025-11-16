@@ -55,28 +55,13 @@ nav ul li a.active {
 }
 
 @media (max-width: 1200px) {
-    nav {
-        left: 50px;
-    }
+
     .content {
         margin-left: 250px;
     }
 }
 
 @media (max-width: 768px) {
-    nav {
-        position: relative;
-        top: auto;
-        left: auto;
-        transform: none;
-        padding: 20px;
-    }
-
-    nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
 
     .logo {
         position: relative;
@@ -90,9 +75,4 @@ nav ul li a.active {
         padding: 20px;
     }
 
-    .hero-image {
-        position: relative;
-        right: auto;
-        max-width: 100%;
-    }
 }

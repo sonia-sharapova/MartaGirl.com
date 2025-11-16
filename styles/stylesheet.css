@@ -138,34 +138,29 @@ nav ul li a.active {
 */
 
 /* Responsive Design */
+@media (max-width: 1600px) {
+    .content {
+        width: 50%;
+    }
+
+}
+
 @media (max-width: 1400px) {
     .content {
-        margin-left: 300px;
+        width: 50%;
     }
+
 }
 
 @media (max-width: 1200px) {
     nav {
-        left: 50px;
-    }
-
-    .back-button {
-        left: 50px;
-    }
-
-    .content {
-        margin-left: 250px;
-    }
-}
-
-@media (max-width: 768px) {
-    nav {
-        position: relative;
-        top: auto;
-        left: auto;
+        position: fixed;
+        top: 100px;
+        left: 80px;
         transform: none;
         padding: 20px;
     }
+
 
     nav ul {
         display: flex;
@@ -173,18 +168,37 @@ nav ul li a.active {
         gap: 20px;
     }
 
-    .logo {
-        position: relative;
-        top: 20px;
-        right: 20px;
-        text-align: center;
+    .content {
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .logo img{
+        top: 10px;
+        right: 10px;
+    }
+
+    nav {
+        left: 30px;
+        line-height: 10px;
+    }
+
+    nav ul li a {
+        gap: unset;
+        font-size: 15px;
+    }
+
+    .content {
+        right: 130px;
+        width: 70%;
     }
 
     .hero-image {
-        position: relative;
-        right: auto;
-        max-width: 100%;
-        margin-top: 40px;
+        background-repeat: no-repeat;
+        background-position: right 200px center;
     }
 
 }
