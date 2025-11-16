@@ -1,9 +1,14 @@
+.project-detail-container {
+    margin-top: 100px;
+}
+
 /* Flip Container Styles */
 .flip-container {
     max-width: 1200px;
     margin: 40px auto;
     padding: 10px;
     text-align: center;
+    margin-top: 40px;
 }
 
 .flip-container.flip-transition {
@@ -74,12 +79,13 @@
 
 /* Flip Navigation */
 .flip-navigation {
-    display: flex;
+    position: relative;
+    margin-top: 30px;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    margin-top: 40px;
 }
+
 
 .flip-navigation button {
     background: white;

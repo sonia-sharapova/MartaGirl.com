@@ -71,7 +71,4 @@ Generation Conscious was an initiative to reduce water waste in toiletry and lau
 ![Project 22](../images/branding/generation-conscious/22.png)
 ![Project 23](../images/branding/generation-conscious/23.png)
 
-*Concept*
-*Date*
-
 </div>
