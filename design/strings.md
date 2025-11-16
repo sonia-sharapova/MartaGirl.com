@@ -1,81 +1,41 @@
 # Strings
 
-Description
-
 ## Gallery
 
 <div class="portfolio-grid">
 
-![Project 1](../images/design/strings/1.png)
-*Description*
-*Date*
+![Strings Intro](../images/design/strings/1.png)
 
-![Project 2](../images/design/strings/2.png)
-*Description*
-*Date*
+![Strings 1](../images/design/strings/2.png)
 
-![Project 3](../images/design/strings/3.png)
-*Description*
-*Date*
+![Strings 2](../images/design/strings/3.png)
 
-![Project 4](../images/design/strings/4.png)
-*Description*
-*Date*
+![Strings 3](../images/design/strings/4.png)
 
-![Project 5](../images/design/strings/5.png)
-*Description*
-*Date*
+![Strings 4](../images/design/strings/5.png)
 
-![Project 6](../images/design/strings/6.png)
-*Description*
-*Date*
+![Strings 5](../images/design/strings/6.png)
 
-![Project 7](../images/design/strings/7.png)
-*Description*
-*Date*
+![Strings 7](../images/design/strings/7.png)
 
-![Project 8](../images/design/strings/8.png)
-*Description*
-*Date*
+![Strings 8](../images/design/strings/8.png)
 
-![Project 9](../images/design/strings/9.png)
-*Description*
-*Date*
+![Strings 9](../images/design/strings/9.png)
 
-![Project 10](../images/design/strings/10.png)
-*Description*
-*Date*
+![Strings 10](../images/design/strings/10.png)
 
-![Project 11](../images/design/strings/11.png)
-*Description*
-*Date*
+![Strings 11](../images/design/strings/11.png)
 
-![Project 12](../images/design/strings/12.png)
-*Description*
-*Date*
+![Strings 12](../images/design/strings/12.png)
 
-![Project 13](../images/design/strings/13.png)
-*Description*
-*Date*
+![Strings 13](../images/design/strings/13.png)
 
-![Project 14](../images/design/strings/14.png)
-*Description*
-*Date*
+![Strings 14](../images/design/strings/14.png)
 
-![Project 15](../images/design/strings/15.png)
-*Description*
-*Date*
+![Strings 16](../images/design/strings/16.png)
 
-![Project 16](../images/design/strings/16.png)
-*Description*
-*Date*
+![Strings 17](../images/design/strings/17.png)
 
-![Project 17](../images/design/strings/17.png)
-*Description*
-*Date*
-
-![Project 18](../images/design/strings/18.png)
-*Description*
-*Date*
+![Strings 18](../images/design/strings/18.png)
 
 </div>
