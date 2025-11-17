@@ -35,7 +35,7 @@ body {
 nav {
     position: fixed;
     top: 50%;
-    left: 100px;
+    left: 200px;
     transform: translateY(-50%);
     z-index: 900;
 }
@@ -145,12 +145,6 @@ nav ul li a.active {
 
 }
 
-@media (max-width: 1400px) {
-    .content {
-        width: 50%;
-    }
-
-}
 
 @media (max-width: 1200px) {
     nav {

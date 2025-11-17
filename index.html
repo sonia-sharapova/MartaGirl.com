@@ -3,36 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>martagirl - Portfolio</title>
+    <title>Marta Sharapova</title>
     <link rel="icon" href="images/titleMiniLogo.png" />
     <link rel="stylesheet" href="styles/homeStyle.css">
     <link rel="stylesheet" href="styles/stylesheet.css">
+    <style>
+        /* Override responsive behavior for index.html navigation */
+        .index-nav ul {
+            display: block !important;
+            flex-wrap: nowrap !important;
+        }
 
+        .index-nav ul li {
+            display: block !important;
+            margin: 20px 0 !important;
+        }
+
+        @media (max-width: 1200px) {
+            .index-nav {
+                position: fixed !important;
+                top: 50% !important;
+                left: 200px !important;
+                transform: translateY(-50%) !important;
+            }
+
+            .index-nav ul {
+                display: block !important;
+                flex-wrap: nowrap !important;
+                gap: 0 !important;
+            }
+
+            .index-nav ul li {
+                display: block !important;
+                margin: 20px 0 !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .index-nav {
+                left: 30px !important;
+                line-height: normal !important;
+            }
+
+            .index-nav ul li a {
+                font-size: 18px !important;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Logo -->
-    <div class="logo">
-        <img src="images/titleLogo.png" alt="Logo" class="logo">
+<!-- Logo -->
+<div class="logo">
+    <img src="images/titleLogo.png" alt="Logo" class="logo">
+</div>
 
-    </div>
+<!-- Main Navigation with specific class for index.html -->
+<nav class="index-nav">
+    <ul>
+        <li><a href="design/design.html">design</a></li>
+        <li><a href="films/film.html">film</a></li>
+        <li><a href="branding/branding.html">branding</a></li>
+        <li><a href="illustrations/illustration.html">illustration</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="contact.html">contact</a></li>
+    </ul>
+</nav>
 
-    <!-- Main Navigation -->
-    <nav>
-        <ul>
-            <li><a href="design/design.html">design</a></li>
-            <li><a href="films/film.html">film</a></li>
-            <li><a href="branding/branding.html">branding</a></li>
-            <li><a href="illustrations/illustration.html">illustration</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="contact.html">contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Decorative Shapes
-    <div class="decorative-shape shape-circle shape-1"></div>
-    <div class="decorative-shape shape-circle shape-2"></div> -->
-
-    <!-- Hero Image (if you have one) -->
-    <img src="images/background/bck_home.jpg" alt="Hero" class="hero-image">
+<!-- Hero Image -->
+<img src="images/background/bck_home.jpg" alt="Hero" class="hero-image">
 </body>
 </html>

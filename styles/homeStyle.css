@@ -13,7 +13,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Main Navigation */
+/* Main Navigation
 nav {
     position: fixed;
     top: 45%;
@@ -44,7 +44,7 @@ nav ul li a:hover,
 nav ul li a.active {
     color: #ff6b9d;
 }
-
+*/
 
 
 /* Responsive Design */
@@ -53,12 +53,12 @@ nav ul li a.active {
         margin-left: 300px;
     }
 }
-
 @media (max-width: 1200px) {
 
     .content {
         margin-left: 250px;
     }
+
 }
 
 @media (max-width: 768px) {
