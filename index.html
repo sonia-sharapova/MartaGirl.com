@@ -1,64 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marta Sharapova</title>
     <link rel="icon" href="images/titleMiniLogo.png" />
-    <link rel="stylesheet" href="styles/homeStyle.css">
     <link rel="stylesheet" href="styles/stylesheet.css">
-    <style>
-        /* Override responsive behavior for index.html navigation */
-        .index-nav ul {
-            display: block !important;
-            flex-wrap: nowrap !important;
-        }
-
-        .index-nav ul li {
-            display: block !important;
-            margin: 20px 0 !important;
-        }
-
-        @media (max-width: 1200px) {
-            .index-nav {
-                position: fixed !important;
-                top: 50% !important;
-                left: 200px !important;
-                transform: translateY(-50%) !important;
-            }
-
-            .index-nav ul {
-                display: block !important;
-                flex-wrap: nowrap !important;
-                gap: 0 !important;
-            }
-
-            .index-nav ul li {
-                display: block !important;
-                margin: 20px 0 !important;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .index-nav {
-                left: 30px !important;
-                line-height: normal !important;
-            }
-
-            .index-nav ul li a {
-                font-size: 18px !important;
-            }
-        }
-    </style>
 </head>
+<style>
+
+
+    @media (max-width: 768px) {
+
+        nav:not(.index-nav) {
+            display: flex !important;
+            left: 100px;
+            top: 350px;
+        }
+
+        /* Hide desktop nav, show mobile toggle */
+        .mobile-nav-toggle {
+            display: flex;
+        }
+
+        .logo {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 60px;
+            height: auto;
+            z-index: 1002;
+        }
+
+        .logo img {
+            width: 20%;
+            height: auto;
+        }
+
+        .content {
+            margin: 0;
+            padding: 20px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .logo {
+            width: 50%;
+            top: 15px;
+            right: 15px;
+        }
+
+        .mobile-nav-toggle {
+            top: 15px;
+            left: 15px;
+        }
+
+        .mobile-nav-menu ul li a {
+            font-size: 20px;
+        }
+    }
+</style>
 <body>
-<!-- Logo -->
+<!-- Logo - Desktop shows full logo, mobile shows mini logo -->
 <div class="logo">
-    <img src="images/titleLogo.png" alt="Logo" class="logo">
+    <picture>
+        <source media="(max-width: 768px)" srcset="images/titleMiniLogo.png">
+        <img src="images/titleLogo.png" alt="Logo" class="logo">
+    </picture>
 </div>
 
-<!-- Main Navigation with specific class for index.html -->
-<nav class="index-nav">
+<!-- Mobile Navigation Toggle -->
+<button class="mobile-nav-toggle" aria-label="Toggle navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+<!-- Mobile Navigation Menu -->
+<div class="mobile-nav-menu">
+    <button class="mobile-nav-close" aria-label="Close navigation">×</button>
+    <ul>
+        <li><a href="design/design.html">design</a></li>
+        <li><a href="films/film.html">film</a></li>
+        <li><a href="branding/branding.html">branding</a></li>
+        <li><a href="illustrations/illustration.html">illustration</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="contact.html">contact</a></li>
+    </ul>
+</div>
+
+<!-- Desktop Main Navigation - Always Vertical -->
+<nav>
     <ul>
         <li><a href="design/design.html">design</a></li>
         <li><a href="films/film.html">film</a></li>
@@ -71,5 +103,8 @@
 
 <!-- Hero Image -->
 <img src="images/background/bck_home.jpg" alt="Hero" class="hero-image">
+
+<!-- External JavaScript -->
+<script src="script.js"></script>
 </body>
 </html>
