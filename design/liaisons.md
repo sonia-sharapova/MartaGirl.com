@@ -9,11 +9,9 @@ This is a book I created as part of my junior thesis. It contains a thorough aes
 ![Project 1](../images/design/liaisons/1.png)
 
 ![Project 2](../images/design/liaisons/2.png)
-
 ![Project 3](../images/design/liaisons/3.png)
 
 ![Project 4](../images/design/liaisons/4.png)
-
 ![Project 5](../images/design/liaisons/5.png)
 
 ![Project 7](../images/design/liaisons/7.png)

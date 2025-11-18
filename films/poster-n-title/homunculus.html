@@ -10,7 +10,12 @@
   <script src="../../scripts/markdown-loader.js"></script>
   <script src="../../scripts/nav-generator.js"></script>
 </head>
-
+<style>
+  /* Override portfolio grid to have equal heights per row */
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+</style>
 <body>
 <!-- Logo - Desktop shows title logo, mobile shows mini logo -->
 <div class="logo">
@@ -63,7 +68,7 @@
 </div>
 
 <!-- Main Content - This will be populated from the markdown file -->
-<div class="content with-tertiary" data-markdown="homonculus.md">
+<div class="content with-tertiary" data-markdown="homunculus.md">
   <div class="project-detail">
     <!-- Content will be loaded here from braille-code.md -->
     <p style="color: #999;">Loading content...</p>
