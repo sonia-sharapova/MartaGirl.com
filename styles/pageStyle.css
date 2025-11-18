@@ -1,4 +1,4 @@
-/* Logo/Brand */
+/* Logo/Brand - Desktop */
 .mini-logo {
     position: fixed;
     top: 30px;
@@ -20,7 +20,7 @@
 .secondary-nav {
     position: fixed;
     top: 50%;
-    left: 350px;
+    left: 21%;
     transform: translateY(-50%);
     z-index: 800;
     display: none;
@@ -45,6 +45,7 @@
     font-weight: 400;
     text-transform: lowercase;
     transition: color 0.3s ease;
+    letter-spacing: 3px;
 }
 
 .secondary-nav ul li a:hover,
@@ -52,18 +53,24 @@
     color: #ff6b9d;
 }
 
-/* Tertiary Navigation (for sub-subcategories) */
 .tertiary-nav {
     position: fixed;
-    top: 44%;
-    left: 700px;
+    top: 50%;
+    left: 38%;
     transform: translateY(-50%);
     transition: all 0.3s ease;
     z-index: 700;
     display: none;
 }
 
+/* Show when active AND has content */
 .tertiary-nav.active {
+    display: block;
+}
+
+
+/* Or show when it has list items */
+.tertiary-nav:has(ul li) {
     display: block;
 }
 
@@ -75,6 +82,7 @@
     margin: 12px 0;
 }
 
+
 .tertiary-nav ul li a {
     text-decoration: none;
     text-transform: lowercase;
@@ -82,6 +90,7 @@
     font-size: 14px;
     font-weight: 400;
     transition: color 0.3s ease;
+    letter-spacing: 3px;
 }
 
 .tertiary-nav ul li a:hover,
@@ -92,16 +101,29 @@
 /* Main Content */
 .content.with-secondary {
     margin-top: 120px;
-    margin-left: 650px;
+    margin-left: 40%;
+    margin-right: 5%;
     position: relative;
     z-index: 500;
 }
 
-.content.with-tertiary {
-    margin-top: 120px;
-    margin-left: 900px;
+.content.with-secondary a {
+    color: #ff6b9d;
+    text-decoration: none;
 }
 
+.content.with-tertiary {
+    margin-top: 120px;
+    margin-left: 40%;
+    margin-right: 5%;
+    position: relative;
+    z-index: 500;
+}
+
+.content.with-tertiary a {
+    color: #ff6b9d;
+    text-decoration: none;
+}
 
 /* Portfolio Grid */
 .portfolio-grid {
@@ -173,7 +195,6 @@
     letter-spacing: 1px;
 }
 
-/* Hide empty overlay content */
 .portfolio-item-overlay:empty {
     display: none;
 }
@@ -214,236 +235,18 @@
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-/* Lightbox Styles */
-.lightbox {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(246, 245, 245, 0.95);
-    z-index: 10000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    animation: fadeIn 0.3s forwards;
-}
-
 @keyframes fadeIn {
     to {
         opacity: 1;
     }
 }
 
-.lightbox-content {
-    position: relative;
-    max-width: 90%;
-    max-height: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.lightbox-image-container {
-    position: relative;
-    max-width: 100%;
-    max-height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.lightbox img {
-    width: 100%;
-    max-height:40vh;
-    object-fit: contain;
-    border-radius: 2px;
-    box-shadow: 0 10px 50px rgba(0,0,0,0.5);
-}
-/* Multi-image grid in lightbox */
-.lightbox-multi-grid {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    max-width: 70vw;
-    max-height: 85vh;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding: 30px;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    scrollbar-width: thin;
-    scrollbar-color: #ff6b9d rgba(0, 0, 0, 0.1);
-}
-
-/* Custom scrollbar for Webkit browsers */
-.lightbox-multi-grid::-webkit-scrollbar {
-    height: 8px;
-}
-
-.lightbox-multi-grid::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-}
-
-.lightbox-multi-grid::-webkit-scrollbar-thumb {
-    background: #ff6b9d;
-    border-radius: 3px;
-}
-
-.lightbox-multi-grid::-webkit-scrollbar-thumb:hover {
-    background: #ff4d8d;
-}
-
-.lightbox-multi-grid img {
-    width: auto;
-    height: auto;
-    max-width: 40vw;
-    max-height: 35vh;
-    object-fit: contain;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: transform 0.3s ease;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-    flex-shrink: 0;
-}
-
-.lightbox-multi-grid img:hover {
-    transform: scale(1.02);
-}
-
-/* Ensure images maintain their aspect ratio */
-.lightbox-multi-grid img[width][height] {
-    /* Respect original dimensions if available */
-    width: auto;
-    height: auto;
-}
-
-/* Single image - make it extra large and centered */
-.lightbox-multi-grid:has(img:only-child) {
-    justify-content: center;
-}
-
-.lightbox-multi-grid:has(img:only-child) img {
-    max-width: 90vw;
-    max-height: 85vh;
-}
-
-/* Two images - space them evenly */
-.lightbox-multi-grid:has(img:nth-child(2):last-child) {
-    justify-content: space-around;
-}
-
-/* Three or more images - allow horizontal scrolling */
-.lightbox-multi-grid:has(img:nth-child(3)) {
-    justify-content: flex-start;
-}
-
-/* Add some spacing between images when scrolling is needed */
-.lightbox-multi-grid:not(:has(img:only-child)) img {
-    margin-right: 20px;
-}
-
-.lightbox-multi-grid:not(:has(img:only-child)) img:last-child {
-    margin-right: 0;
-}
-
-.lightbox-info {
-    text-align: center;
-    color: #868686;
-    max-width: 600px;
-}
-
-.lightbox-info h3 {
-    font-size: 24px;
-    font-weight: normal;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-}
-
-.lightbox-info p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #ccc;
-    letter-spacing: 1px;
-}
-
-.lightbox-close {
-    position: absolute;
-    bottom: 440px;
-    left: 100%;
-    color: #989898;
-    font-size: 40px;
-    cursor: pointer;
-    font-weight: 300;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease;
-    z-index: 10001;
-}
-
-.lightbox-close:hover {
-    transform: scale(1.1);
-}
-
-.lightbox-nav {
-    position: absolute;
-    top: 50%;
-    width: calc(100% + 120px);
-    left: -60px;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-    pointer-events: none;
-}
-
-.lightbox-nav button {
-    background: rgba(122, 122, 122, 0.12);
-    border: 2px solid rgba(91, 91, 91, 0.04);
-    color: #989898;
-    font-size: 30px;
-    padding: 5px 10px;
-    margin: -10px;
-    cursor: pointer;
-    transition: all 0.2s;
-    border-radius: 5px;
-    pointer-events: all;
-    backdrop-filter: blur(10px);
-}
-
-.lightbox-nav button:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.5);
-}
-
-.lightbox-nav button:disabled {
-    opacity: 0.3;
-    cursor: not-allowed;
-}
-
-.lightbox-counter {
-    position: absolute;
-    top: 450px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 14px;
-    letter-spacing: 2px;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 8px 16px;
-    border-radius: 20px;
-}
 
 /* Layout Toggle Styles */
 .layout-toggle {
     position: absolute;
     top: 260px;
-    left: 680px;
+    left: 42%;
     z-index: 900;
     display: flex;
     gap: 10px;
@@ -476,44 +279,151 @@
     transform: translateY(-1px);
 }
 
-/* Responsive Design */
-@media (max-width: 1400px) {
+/* Add this to the mobile category list styles in pageStyle.css */
+.mobile-category-list {
+    display: none;
+}
 
+.mobile-subcategories {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-subcategories li {
+    margin: 20px 0;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.mobile-subcategories li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    display: block;
+}
+
+.mobile-subcategories li:hover {
+    background: rgba(255, 107, 157, 0.1);
+    transform: translateX(5px);
+}
+
+.mobile-subcategories li a:hover {
+    color: #ff6b9d;
+}
+
+/* Responsive Design - Scaled for different screen sizes */
+@media (max-width: 1600px) {
+    .secondary-nav {
+        left: 18%;
+    }
+
+    .tertiary-nav {
+        left: 38%;
+    }
+
+    .content.with-secondary {
+        margin-left: 35%;
+        width: 60%;
+    }
+
+
+    .content.with-tertiary {
+        margin-left: 50%;
+    }
+
+
+    .layout-toggle {
+        left: 38%;
+        padding-left: unset;
+    }
+}
+
+@media (max-width: 1400px) {
+    .secondary-nav {
+        left: 8%;
+    }
+
+    .tertiary-nav {
+        left: 30%;
+    }
+
+    .content.with-secondary {
+        margin-left: 30%;
+        width: 65%;
+    }
+
+    .content.with-tertiary {
+        margin-left: 42%;
+        margin-right: 8%;
+    }
+
+
+    .layout-toggle {
+        left: 34%;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .secondary-nav {
+        left: 6%;
+    }
+    .layout-toggle {
+        top: 290px;
+        left: 35%;
+    }
 
     .project-detail .description {
         font-size: 13px;
     }
 }
 
-@media (max-width: 1200px) {
-
-    .content.with-secondary {
-        margin-left: 300px;
-    }
-
-    .secondary-nav {
-        left: 100px;
-    }
-
-}
-
 @media (max-width: 768px) {
+    /* Show mobile category list on mobile for all pages */
+    .mobile-category-list {
+        display: block !important;
+    }
 
+    /* Branding page specific mobile styling */
+    body:has(.branding-page) .mobile-category-list,
+    .branding-page .mobile-category-list {
+        display: block !important;
+    }
+
+    /* Hide desktop secondary and tertiary nav */
     .secondary-nav,
     .tertiary-nav {
-        left: 50px;
-        width: 30%;
-
+        display: none !important;
     }
-    .secondary-nav ul li a,
-    .tertiary-nav ul li a{
-        font-size: 15px;
-        line-height:10px;
-        display: flex;
-        flex-wrap: wrap;
+
+    /* Adjust content margins */
+    .content.with-secondary,
+    .content.with-tertiary {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        margin-top: 140px !important;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .project-images {
+        grid-template-columns: 1fr;
         gap: 20px;
     }
 
+    .layout-toggle {
+        top: 200px;
+        left: 8%;
+    }
 
     .lightbox-nav {
         width: 100%;
@@ -532,5 +442,33 @@
 
     .lightbox-info p {
         font-size: 14px;
+    }
+
+    .lightbox-multi-grid {
+        max-width: 90vw;
+        padding: 15px;
+    }
+
+    .lightbox-multi-grid img {
+        max-width: 80vw;
+        max-height: 40vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-detail h1 {
+        font-size: 24px;
+    }
+
+    .project-detail .description {
+        font-size: 14px;
+    }
+
+    .lightbox-close {
+        bottom: auto;
+        top: 10px;
+        right: 10px;
+        left: auto;
+        font-size: 30px;
     }
 }

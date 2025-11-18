@@ -1,0 +1,298 @@
+{
+  "categories": [
+    {
+      "name": "design",
+      "displayName": "design",
+      "path": "design/design.html",
+      "hasSecondaryNav": true,
+      "children": [
+        {
+          "name": "party-flyers",
+          "displayName": "party flyers",
+          "path": "design/party-flyers.html"
+        },
+        {
+          "name": "strings",
+          "displayName": "strings",
+          "path": "design/strings.html"
+        },
+        {
+          "name": "duration",
+          "displayName": "duration",
+          "path": "design/duration.html"
+        },
+        {
+          "name": "monotony",
+          "displayName": "monotony",
+          "path": "design/monotony.html"
+        },
+        {
+          "name": "album-art",
+          "displayName": "album art",
+          "path": "design/album-art.html"
+        },
+        {
+          "name": "lettering",
+          "displayName": "lettering",
+          "path": "design/lettering.html"
+        },
+        {
+          "name": "liaisons",
+          "displayName": "liaisons",
+          "path": "design/liaisons.html"
+        },
+        {
+          "name": "perfume",
+          "displayName": "perfume",
+          "path": "design/perfume.html"
+        },
+        {
+          "name": "lint",
+          "displayName": "lint",
+          "path": "design/lint.html"
+        },
+        {
+          "name": "planar-uncertainty",
+          "displayName": "planar uncertainty",
+          "path": "design/planar-uncertainty.html"
+        },
+        {
+          "name": "experimental-work",
+          "displayName": "experimental work",
+          "path": "design/experimental-work.html"
+        }
+      ]
+    },
+    {
+      "name": "film",
+      "displayName": "film",
+      "path": "films/film.html",
+      "hasSecondaryNav": true,
+      "children": [
+        {
+          "name": "original-films",
+          "displayName": "original films",
+          "path": "films/original-films/original-films.html",
+          "hasTertiaryNav": true,
+          "children": [
+            {
+              "name": "strings",
+              "displayName": "strings",
+              "path": "films/original-films/strings.html"
+            },
+            {
+              "name": "baudelaire",
+              "displayName": "geometry",
+              "path": "films/original-films/baudelaire.html"
+            },
+            {
+              "name": "don-qui",
+              "displayName": "don quixote",
+              "path": "films/original-films/don-qui.html"
+            },
+            {
+              "name": "baroque",
+              "displayName": "baroque sheep",
+              "path": "films/original-films/baroque.html"
+            },
+            {
+              "name": "vlogs",
+              "displayName": "vlogs",
+              "path": "films/original-films/vlogs.html"
+            },
+            {
+              "name": "monotony",
+              "displayName": "monotony",
+              "path": "films/original-films/monotony.html"
+            },
+            {
+              "name": "animation",
+              "displayName": "animation projects",
+              "path": "films/original-films/animation.html"
+            }
+          ]
+        },
+        {
+          "name": "poster-n-title",
+          "displayName": "poster & title design",
+          "path": "films/poster-n-title/poster-n-title.html",
+          "hasTertiaryNav": true,
+          "children": [
+            {
+              "name": "lords-valley",
+              "displayName": "lords valley",
+              "path": "films/poster-n-title/lords-valley.html"
+            },
+            {
+              "name": "honest",
+              "displayName": "the honest movie",
+              "path": "films/poster-n-title/honest.html"
+            },
+            {
+              "name": "homunculus",
+              "displayName": "homunculus",
+              "path": "films/poster-n-title/homunculus.html"
+            },
+            {
+              "name": "judgement",
+              "displayName": "the judgement",
+              "path": "films/poster-n-title/judgement.html"
+            },
+            {
+              "name": "less-matter",
+              "displayName": "less matter",
+              "path": "films/poster-n-title/less-matter.html"
+            },
+            {
+              "name": "perfect-strangers",
+              "displayName": "perfect strangers",
+              "path": "films/poster-n-title/perfect-strangers.html"
+            },
+            {
+              "name": "ed-rex",
+              "displayName": "ed rex",
+              "path": "films/poster-n-title/ed-rex.html"
+            },
+            {
+              "name": "shyness",
+              "displayName": "curing adult shyness",
+              "path": "films/poster-n-title/shyness.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "branding",
+      "displayName": "branding",
+      "path": "branding/branding.html",
+      "hasSecondaryNav": true,
+      "children": [
+        {
+          "name": "swann-galleries",
+          "displayName": "swann auction galleries",
+          "path": "branding/swann/swann-galleries.html",
+          "hasTertiaryNav": true,
+          "children": [
+            {
+              "name": "website",
+              "displayName": "website re-design",
+              "path": "branding/swann/website.html"
+            },
+            {
+              "name": "advertisements",
+              "displayName": "advertisements",
+              "path": "branding/swann/advertisements.html"
+            },
+            {
+              "name": "events",
+              "displayName": "events",
+              "path": "branding/swann/events.html"
+            },
+            {
+              "name": "video",
+              "displayName": "videography",
+              "path": "branding/swann/video.html"
+            },
+            {
+              "name": "printed",
+              "displayName": "printed matter",
+              "path": "branding/swann/printed.html"
+            }
+          ]
+        },
+        {
+          "name": "artforum",
+          "displayName": "artforum magazine",
+          "path": "branding/artforum.html"
+        },
+        {
+          "name": "generation-conscious",
+          "displayName": "generation conscious",
+          "path": "branding/generation-conscious.html"
+        },
+        {
+          "name": "anonlychild",
+          "displayName": "anOnlyChild",
+          "path": "branding/anonlychild.html",
+          "customStyle": "text-transform: unset"
+        },
+        {
+          "name": "hetopia-vision",
+          "displayName": "hetopia vision",
+          "path": "branding/hetopia-vision.html"
+        },
+        {
+          "name": "rise-ride",
+          "displayName": "rise & ride",
+          "path": "branding/rise-ride.html"
+        },
+        {
+          "name": "ps6",
+          "displayName": "PS6",
+          "path": "branding/ps6.html"
+        },
+        {
+          "name": "braille-code",
+          "displayName": "braille code",
+          "path": "branding/braille-code.html"
+        }
+      ]
+    },
+    {
+      "name": "illustration",
+      "displayName": "illustration",
+      "path": "illustrations/illustration.html",
+      "hasSecondaryNav": true,
+      "children": [
+        {
+          "name": "teshigahara",
+          "displayName": "teshigahara",
+          "path": "illustrations/teshigahara.html"
+        },
+        {
+          "name": "village",
+          "displayName": "village home & bedroom",
+          "path": "illustrations/village.html"
+        },
+        {
+          "name": "sketchbook",
+          "displayName": "sketchbook",
+          "path": "illustrations/sketchbook.html"
+        },
+        {
+          "name": "table-settings",
+          "displayName": "table settings",
+          "path": "illustrations/table-settings.html"
+        },
+        {
+          "name": "cold-war",
+          "displayName": "cold war",
+          "path": "illustrations/cold-war.html"
+        },
+        {
+          "name": "architecture",
+          "displayName": "architecture",
+          "path": "illustrations/architecture.html"
+        },
+        {
+          "name": "academic",
+          "displayName": "academic drawings",
+          "path": "illustrations/academic.html"
+        }
+      ]
+    }
+  ],
+  "staticPages": [
+    {
+      "name": "about",
+      "displayName": "about",
+      "path": "about.html"
+    },
+    {
+      "name": "contact",
+      "displayName": "contact",
+      "path": "contact.html"
+    }
+  ]
+}
