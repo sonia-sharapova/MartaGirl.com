@@ -141,6 +141,20 @@
                 submenu.classList.toggle('open');
             }
         });
+
+        // Ensure all navigation links preserve .html extension
+        const allNavLinks = document.querySelectorAll('nav a, .mobile-nav-menu a');
+        allNavLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                // Check if the href contains .html
+                if (href && href.includes('.html')) {
+                    // Force navigation with .html extension
+                    e.preventDefault();
+                    window.location.href = href;
+                }
+            });
+        });
     });
 </script>
 </body>

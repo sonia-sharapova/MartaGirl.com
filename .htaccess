@@ -1,12 +1,15 @@
 # Enable URL rewriting
 RewriteEngine On
 
-# Add .html extension if accessing without it
+# Don't rewrite files or directories that exist
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+
+# If accessing a path without .html, check if .html version exists and serve it
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html [L]
 
-# Prevent removing .html from URLs that already have it
-RewriteCond %{THE_REQUEST} ^GET\ /[^\ ]+\.html
-RewriteRule ^(.*)\.html$ /$1 [L,R=301]
+# Optional: If you want to redirect .html URLs to clean URLs
+# Comment out these lines if you want to keep .html in URLs
+# RewriteCond %{THE_REQUEST} ^GET\ /.*\.html\ HTTP
+# RewriteRule ^(.*)\.html$ /$1 [R=301,L]
