@@ -519,6 +519,19 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Ensure category link preserves .html extension
+    const categoryLink = document.querySelector('.back-button a#category');
+    if (categoryLink) {
+        categoryLink.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            // If href doesn't end with .html, ensure navigation preserves it
+            if (href && !href.includes('.html')) {
+                e.preventDefault();
+                window.location.href = href + '.html';
+            }
+        });
+    }
 });
 
 // Update setActiveNav to show subnavigation on main pages
