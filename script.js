@@ -8,6 +8,27 @@ function scrollToTop() {
     });
 }
 
+// Add this at the very beginning of your DOMContentLoaded event
+document.addEventListener('DOMContentLoaded', function() {
+    // Wait a brief moment for nav-generator to initialize
+    setTimeout(() => {
+        console.log('Checking navigation state:', {
+            desktopNav: document.querySelector('nav ul')?.children.length,
+            mobileNav: document.querySelector('.mobile-nav-menu ul')?.children.length,
+            navGenerator: typeof NavigationGenerator
+        });
+
+        // If navigation isn't populated, try to initialize it manually
+        const mobileNav = document.querySelector('.mobile-nav-menu ul');
+        const desktopNav = document.querySelector('nav ul');
+
+        if (mobileNav && mobileNav.children.length === 0) {
+            console.log('Navigation not populated, attempting manual initialization');
+            // You might need to manually trigger nav generation here
+        }
+    }, 100);
+});
+
 // Image lazy loading
 document.addEventListener('DOMContentLoaded', function() {
     const images = document.querySelectorAll('img[data-src]');
