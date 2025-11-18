@@ -1,9 +1,31 @@
+.mobile-nav-toggle {
+    background: rgba(204, 204, 204, 0.62);
+}
+
+.back-button #category {
+    color: #ff6b9d;
+    text-shadow: 0 0 10px #ffffff, /* Horizontal offset, Vertical offset, Blur radius, Color */
+    0 0 20px #ffffff,
+    0 0 30px #ffffff; /* Stack multiple shadows for a stronger glow */
+}
+
+.back-button a {
+    color: #ffffff;
+    text-shadow: 0 0 10px #ff6b9d, /* Horizontal offset, Vertical offset, Blur radius, Color */
+    0 0 20px #ff6b9d,
+    0 0 30px #ff6b9d; /* Stack multiple shadows for a stronger glow */
+}
 
 /* About Page */
 .about-content {
-    max-width: 600px;
+    max-width: 60%;
+    margin-top: 130px;
     line-height: 1.8;
     font-size: 16px;
+    color: #ffffff; /* Set the text color, often a bright color */
+    text-shadow: 0 0 10px #ff6b9d, /* Horizontal offset, Vertical offset, Blur radius, Color */
+    0 0 20px #ff6b9d,
+    0 0 30px #ff6b9d; /* Stack multiple shadows for a stronger glow */
 }
 
 .about-content p {
@@ -59,4 +81,14 @@
 
 .contact-info a:hover {
     text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+
+    .about-content {
+        color: #f5f5f5; /* Set the text color, often a bright color */
+        max-width: 100%;
+        margin-top: 10px;
+    }
 }

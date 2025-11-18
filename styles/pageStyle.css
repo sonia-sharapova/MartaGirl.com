@@ -1,26 +1,9 @@
-/* Logo/Brand - Desktop */
-.mini-logo {
-    position: fixed;
-    top: 30px;
-    right: 40px;
-    max-width: 18%;
-    z-index: 1000;
-}
-
-.mini-logo h1 {
-    font-size: 72px;
-    font-weight: 700;
-    color: #ffc0d4;
-    line-height: 0.85;
-    text-transform: lowercase;
-    letter-spacing: -2px;
-}
 
 /* Secondary Navigation (for subcategories) */
 .secondary-nav {
     position: fixed;
     top: 50%;
-    left: 21%;
+    left: 20%;
     transform: translateY(-50%);
     z-index: 800;
     display: none;
@@ -41,7 +24,7 @@
 .secondary-nav ul li a {
     text-decoration: none;
     color: #333;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     text-transform: lowercase;
     transition: color 0.3s ease;
@@ -87,7 +70,7 @@
     text-decoration: none;
     text-transform: lowercase;
     color: #555;
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: 400;
     transition: color 0.3s ease;
     letter-spacing: 3px;
@@ -114,7 +97,7 @@
 
 .content.with-tertiary {
     margin-top: 120px;
-    margin-left: 40%;
+    margin-left: 50%;
     margin-right: 5%;
     position: relative;
     z-index: 500;
@@ -291,8 +274,8 @@
 }
 
 .mobile-subcategories li {
-    margin: 20px 0;
-    padding: 15px 20px;
+    margin: 10px 0;
+    padding: 5px 10px;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
     transition: all 0.3s ease;
@@ -304,7 +287,7 @@
     font-size: 18px;
     font-weight: 400;
     text-transform: lowercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     display: block;
 }
 
@@ -319,13 +302,7 @@
 
 /* Responsive Design - Scaled for different screen sizes */
 @media (max-width: 1600px) {
-    .secondary-nav {
-        left: 18%;
-    }
 
-    .tertiary-nav {
-        left: 38%;
-    }
 
     .content.with-secondary {
         margin-left: 35%;
@@ -345,13 +322,7 @@
 }
 
 @media (max-width: 1400px) {
-    .secondary-nav {
-        left: 8%;
-    }
 
-    .tertiary-nav {
-        left: 30%;
-    }
 
     .content.with-secondary {
         margin-left: 30%;
@@ -359,8 +330,8 @@
     }
 
     .content.with-tertiary {
-        margin-left: 42%;
-        margin-right: 8%;
+        margin-left: 50%;
+        width: 50%;
     }
 
 
@@ -369,10 +340,21 @@
     }
 }
 
+
 @media (max-width: 1200px) {
 
     .secondary-nav {
-        left: 6%;
+        left: 18%;
+    }
+
+    .tertiary-nav {
+        left: 38%;
+    }
+
+    .secondary-nav ul li a,
+    .tertiary-nav ul li a {
+        font-size: 0.8rem;
+        letter-spacing: 2px;
     }
     .layout-toggle {
         top: 290px;
@@ -382,6 +364,7 @@
     .project-detail .description {
         font-size: 13px;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -401,6 +384,7 @@
     .tertiary-nav {
         display: none !important;
     }
+
 
     /* Adjust content margins */
     .content.with-secondary,

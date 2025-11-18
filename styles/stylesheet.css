@@ -31,11 +31,30 @@ body {
     letter-spacing: -2px;
 }
 
+/* Logo/Brand - Desktop */
+.mini-logo {
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    max-width: 18%;
+    z-index: 1000;
+}
+
+.mini-logo h1 {
+    font-size: 72px;
+    font-weight: 700;
+    color: #ffc0d4;
+    line-height: 0.85;
+    text-transform: lowercase;
+    letter-spacing: -2px;
+}
+
+
 /* Main Navigation */
 nav {
     position: fixed;
     top: 50%;
-    left: 10%;
+    left: 8%;
     transform: translateY(-50%);
     z-index: 900;
 }
@@ -51,7 +70,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #000;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 400;
     text-transform: lowercase;
     transition: color 0.3s ease;
@@ -282,24 +301,24 @@ nav ul li a.active {
     .content {
         width: 50%;
     }
-
-    nav {
-        left: 5%;
-    }
 }
 
 @media (max-width: 1400px) {
+
     .content {
         width: 60%;
         margin-left: 100px;
     }
-    nav {
-        display: none;
-    }
 }
 
 @media (max-width: 1200px) {
+    nav {
+        left: 5%;
+    }
+    nav ul li a {
+        font-size: 0.9rem;
 
+    }
 }
 
 @media (max-width: 768px) {
