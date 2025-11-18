@@ -9,14 +9,19 @@
     <script src="scripts/nav-generator.js"></script>
 </head>
 <style>
-
     nav {
         display: flex !important;
         left: 20%;
         top: 350px;
     }
-    @media (max-width: 768px) {
 
+    @media (max-width: 1000px) {
+        .hero-image img {
+            background-position: left 20px;
+        }
+    }
+
+    @media (max-width: 768px) {
         nav:not(.index-nav) {
             display: flex !important;
             left: 100px;
@@ -40,6 +45,10 @@
         .logo img {
             width: 20%;
             height: auto;
+        }
+
+        .hero-image {
+            object-position: 80% center;
         }
 
         .content {
@@ -74,26 +83,6 @@
     </picture>
 </div>
 
-<!-- Mobile Navigation Toggle -->
-<button class="mobile-nav-toggle" aria-label="Toggle navigation">
-    <span></span>
-    <span></span>
-    <span></span>
-</button>
-
-<!-- Mobile Navigation Menu -->
-<div class="mobile-nav-menu">
-    <button class="mobile-nav-close" aria-label="Close navigation">×</button>
-    <ul>
-        <li><a href="design/design.html">design</a></li>
-        <li><a href="films/film.html">film</a></li>
-        <li><a href="branding/branding.html">branding</a></li>
-        <li><a href="illustrations/illustration.html">illustration</a></li>
-        <li><a href="about.html">about</a></li>
-        <li><a href="contact.html">contact</a></li>
-    </ul>
-</div>
-
 <!-- Desktop Main Navigation - Always Vertical -->
 <nav>
     <ul>
@@ -111,5 +100,48 @@
 
 <!-- External JavaScript -->
 <script src="script.js"></script>
+<script>
+    // Mobile navigation toggle functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileToggle = document.querySelector('.mobile-nav-toggle');
+        const mobileMenu = document.querySelector('.mobile-nav-menu');
+        const mobileClose = document.querySelector('.mobile-nav-close');
+
+        if (mobileToggle) {
+            mobileToggle.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                mobileToggle.classList.toggle('active');
+            });
+        }
+
+        if (mobileClose) {
+            mobileClose.addEventListener('click', function() {
+                mobileMenu.classList.remove('active');
+                mobileToggle.classList.remove('active');
+            });
+        }
+
+        // Close menu when clicking on a link
+        const mobileLinks = document.querySelectorAll('.mobile-nav-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.remove('active');
+                mobileToggle.classList.remove('active');
+            });
+        });
+
+        // Handle mobile dropdown toggles
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('.mobile-nav-menu .has-submenu > a')) {
+                e.preventDefault();
+                const parent = e.target.closest('.has-submenu');
+                const submenu = parent.querySelector('.submenu');
+
+                parent.classList.toggle('open');
+                submenu.classList.toggle('open');
+            }
+        });
+    });
+</script>
 </body>
 </html>
