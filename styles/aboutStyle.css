@@ -10,6 +10,7 @@
 }
 
 .back-button a {
+    font-size: 20px;
     color: #ffffff;
     text-shadow: 0 0 10px #ff6b9d, /* Horizontal offset, Vertical offset, Blur radius, Color */
     0 0 20px #ff6b9d,
@@ -18,8 +19,9 @@
 
 /* About Page */
 .about-content {
-    max-width: 60%;
+    max-width: 50%;
     margin-top: 130px;
+    margin-left: 8%;
     line-height: 1.8;
     font-size: 16px;
     color: #ffffff; /* Set the text color, often a bright color */
@@ -84,11 +86,26 @@
 }
 
 
+@media (max-width: 1400px) {
+
+    .about-content {
+        margin-left: 30%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .about-content {
+        margin-left: 33%;
+        width: 80%;
+    }
+}
+
 @media (max-width: 768px) {
 
     .about-content {
         color: #f5f5f5; /* Set the text color, often a bright color */
-        max-width: 100%;
-        margin-top: 10px;
+        max-width: 50%;
+        margin-top: 50px;
+        margin-left: 0;
     }
 }
