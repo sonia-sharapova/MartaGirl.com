@@ -1,0 +1,12 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Add .html extension if accessing without it
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Prevent removing .html from URLs that already have it
+RewriteCond %{THE_REQUEST} ^GET\ /[^\ ]+\.html
+RewriteRule ^(.*)\.html$ /$1 [L,R=301]
