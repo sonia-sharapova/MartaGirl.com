@@ -143,6 +143,7 @@
         width: 40%;
         max-width: 250px;
         font-size: 13px;
+        padding: 6px 12px;
     }
 
     .flip-info h3 {
