@@ -136,7 +136,6 @@
 @media (max-width: 768px) {
 
     .flip-navigation {
-        flex-direction: column;
         gap: 15px;
     }
 
