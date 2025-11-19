@@ -102,10 +102,41 @@
 
 @media (max-width: 768px) {
 
+
     .about-content {
-        color: #f5f5f5; /* Set the text color, often a bright color */
-        max-width: 50%;
+        max-width: 100%;
         margin-top: 50px;
-        margin-left: 0;
+        margin-left: 2%;
+        margin-right: 5%;
+        height: auto;
+        overflow: visible;
+        position: relative;
+        color: #ff1a75;
+    }
+
+    /* Create a quarter-circle cutout in the top-right corner for mobile */
+    .about-content::before {
+        content: '';
+        float: right;
+        width: 500px;
+        height: 500px;
+        shape-outside: circle(50% at 100% 0%);
+        clip-path: circle(50% at 100% 0%);
+    }
+
+
+    .concave-text {
+        background-color: #f0f0f0; /* Background of your text area */
+        border-radius: 0 0 100% 100% / 0 0 50% 50%; /* Creates the concave shape */
+        height: 300px; /* Make it taller than the container to hide the top */
+        position: absolute;
+        top: -60%; /* Adjust to position the text within the visible area */
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        color: #333;
+        text-align: center;
     }
 }
