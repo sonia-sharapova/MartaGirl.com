@@ -141,8 +141,9 @@
     }
 
     .flip-navigation button {
-        width: 40%;
+        width: 30%;
         max-width: 250px;
+        font-size: 13px;
     }
 
     .flip-info h3 {
