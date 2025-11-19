@@ -107,7 +107,7 @@
         max-width: 100%;
         margin-top: 50px;
         margin-left: 2%;
-        margin-right: 5%;
+        margin-right: 1%;
         height: auto;
         overflow: visible;
         position: relative;
@@ -118,8 +118,8 @@
     .about-content::before {
         content: '';
         float: right;
-        width: 500px;
-        height: 500px;
+        width: 450px;
+        height: 450px;
         shape-outside: circle(50% at 100% 0%);
         clip-path: circle(50% at 100% 0%);
     }
@@ -130,7 +130,7 @@
         border-radius: 0 0 100% 100% / 0 0 50% 50%; /* Creates the concave shape */
         height: 300px; /* Make it taller than the container to hide the top */
         position: absolute;
-        top: -60%; /* Adjust to position the text within the visible area */
+        top: -40%; /* Adjust to position the text within the visible area */
         left: 0;
         display: flex;
         justify-content: center;
