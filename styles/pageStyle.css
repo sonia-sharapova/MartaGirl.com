@@ -314,11 +314,6 @@
         margin-left: 50%;
     }
 
-
-    .layout-toggle {
-        left: 38%;
-        padding-left: unset;
-    }
 }
 
 @media (max-width: 1400px) {
@@ -335,9 +330,6 @@
     }
 
 
-    .layout-toggle {
-        left: 34%;
-    }
 }
 
 
@@ -355,10 +347,6 @@
     .tertiary-nav ul li a {
         font-size: 0.8rem;
         letter-spacing: 2px;
-    }
-    .layout-toggle {
-        top: 290px;
-        left: 35%;
     }
 
     .project-detail .description {
@@ -406,7 +394,7 @@
 
     .layout-toggle {
         top: 200px;
-        left: 8%;
+        left: 5%;
     }
 
     .lightbox-nav {
