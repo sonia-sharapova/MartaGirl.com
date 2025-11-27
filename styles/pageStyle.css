@@ -348,6 +348,9 @@
         font-size: 0.8rem;
         letter-spacing: 2px;
     }
+    .layout-toggle {
+        top: 290px;
+    }
 
     .project-detail .description {
         font-size: 13px;
